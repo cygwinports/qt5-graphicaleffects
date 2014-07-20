@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="qt5-graphicaleffects"
-VERSION=5.1.0
+VERSION=5.2.1
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Qt C++ application framework (QtQuick effects)"
@@ -13,6 +13,8 @@ investments made on one platform across many others."
 HOMEPAGE="http://qt-project.org/"
 SRC_URI="http://download.qt-project.org/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtgraphicaleffects-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qtgraphicaleffects-opensource-src-${VERSION}"
+
+ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
 qt5_graphicaleffects_CONTENTS="usr/lib/qt5/qml/QtGraphicalEffects/"
